@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:pdam_mobile/MyComponent/textpoppins.dart';
 import 'package:page_transition/page_transition.dart';
+import 'package:pdam_mobile/Pages/users/bayartagihan.dart';
+import 'package:pdam_mobile/Pages/users/cektagihan.dart';
 
 class PembayaranPage extends StatefulWidget {
   const PembayaranPage({super.key});
@@ -186,18 +188,16 @@ class _PembayaranPageState extends State<PembayaranPage>
                                       badgeText: 'Cek',
                                       badgeColor: Colors.blue.shade600,
                                       onTap: () {
-                                        // Navigate to Cek Tagihan page
-                                        // Navigator.push(
-                                        //   context,
-                                        //   PageTransition(
-                                        //     type: PageTransitionType.fade,
-                                        //     duration: const Duration(
-                                        //       milliseconds: 300,
-                                        //     ),
-                                        //     child: CekTagihanPage(),
-                                        //   ),
-                                        // );
-                                        print("Navigate to Cek Tagihan");
+                                        Navigator.push(
+                                          context,
+                                          PageTransition(
+                                            type: PageTransitionType.fade,
+                                            duration: const Duration(
+                                              milliseconds: 300,
+                                            ),
+                                            child: CekTagihanPage(),
+                                          ),
+                                        );
                                       },
                                     ),
                                     const SizedBox(height: 20),
@@ -214,17 +214,16 @@ class _PembayaranPageState extends State<PembayaranPage>
                                       badgeText: 'Bayar',
                                       badgeColor: Colors.green.shade600,
                                       onTap: () {
-                                        // Navigate to Bayar Tagihan page
-                                        // Navigator.push(
-                                        //   context,
-                                        //   PageTransition(
-                                        //     type: PageTransitionType.fade,
-                                        //     duration: const Duration(
-                                        //       milliseconds: 300,
-                                        //     ),
-                                        //     child: BayarTagihanPage(),
-                                        //   ),
-                                        // );
+                                        Navigator.push(
+                                          context,
+                                          PageTransition(
+                                            type: PageTransitionType.fade,
+                                            duration: const Duration(
+                                              milliseconds: 300,
+                                            ),
+                                            child: BayarTagihanPage(),
+                                          ),
+                                        );
                                         print("Navigate to Bayar Tagihan");
                                       },
                                     ),

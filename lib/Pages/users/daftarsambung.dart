@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:page_transition/page_transition.dart';
+import 'package:pdam_mobile/Pages/users/berita.dart';
 import 'package:provider/provider.dart';
 import 'package:pdam_mobile/MyComponent/bottomtab.dart';
 import 'package:pdam_mobile/MyComponent/textpoppins.dart';
@@ -100,6 +101,16 @@ class _DaftarsambungState extends State<Daftarsambung>
           type: PageTransitionType.fade,
           duration: _pageDuration,
           child: const Homeuser(),
+        ),
+      );
+    }
+    if (index == 2) {
+      Navigator.push(
+        context,
+        PageTransition(
+          type: PageTransitionType.fade,
+          duration: const Duration(milliseconds: 350),
+          child: const BeritaPDAMPage(), // halaman daftar sambungan
         ),
       );
     }

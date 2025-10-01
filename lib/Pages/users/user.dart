@@ -1,6 +1,7 @@
 // home_user.dart - Fixed & Cleaned
 import 'package:flutter/material.dart';
 import 'package:pdam_mobile/Pages/loginpage.dart';
+import 'package:pdam_mobile/Pages/users/berita.dart';
 import 'package:pdam_mobile/Pages/users/daftarsambung.dart';
 import 'package:pdam_mobile/Pages/users/pembayaran.dart';
 import 'package:pdam_mobile/Pages/users/pengaduan.dart';
@@ -32,6 +33,17 @@ class _HomeuserState extends State<Homeuser> {
           type: PageTransitionType.fade,
           duration: const Duration(milliseconds: 350),
           child: const Daftarsambung(), // halaman daftar sambungan
+        ),
+      );
+    }
+
+    if (index == 2) {
+      Navigator.push(
+        context,
+        PageTransition(
+          type: PageTransitionType.fade,
+          duration: const Duration(milliseconds: 350),
+          child: const BeritaPDAMPage(), // halaman daftar sambungan
         ),
       );
     }

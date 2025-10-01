@@ -232,7 +232,7 @@ class _CatatMeterMandiriPageState extends State<CatatMeterMandiriPage>
                             const SizedBox(height: 20),
                             SizedBox(
                               width: double.infinity,
-                              height: 50,
+                              height: 30,
                               child: ElevatedButton(
                                 onPressed: _isLoading ? null : _searchCustomer,
                                 style: ElevatedButton.styleFrom(
